@@ -1,20 +1,21 @@
-import React from 'react';
 import styled from 'styled-components';
-import Nav from './components/Nav';
-import FirstSection from './components/FirstSection';
-import SecondSection from './components/SecondSection';
-import ThirdSection from './components/ThirdSection';
-import FourthSection from './components/FourthSection';
-import FifthSection from './components/FifthSection';
-import SixthSection from './components/SixthSection';
-import SeventhSection from './components/SeventhSection';
-import EighthSection from './components/EighthSection';
+import './assets/css/App.css';
+
+import Navbar from './components/Navbar';
+import FirstSection from './pages/FirstSection';
+import SecondSection from './pages/SecondSection';
+import ThirdSection from './pages/ThirdSection';
+import FourthSection from './pages/FourthSection';
+import FifthSection from './pages/FifthSection';
+import SixthSection from './pages/SixthSection';
+import SeventhSection from './pages/SeventhSection';
+import EighthSection from './pages/EighthSection';
 import Footer from './components/Footer';
 
-const App = () => {
+function App() {
   return (
     <AppContainer>
-      <Nav />
+      <Navbar />
       <FirstSection />
       <SecondSection />
       <ThirdSection />
@@ -27,9 +28,15 @@ const App = () => {
       <Footer />
     </AppContainer>
   );
-};
+}
 
 export default App;
+
+//아래와 같은 방식으로 폰트와 컬러 사용하시면 됩니다!
+const H1 = styled.h1`
+  ${({ theme }) => theme.fonts.sansita_one}
+  color: ${({ theme }) => theme.colors.pc1}
+`;
 
 const AppContainer = styled.div`
   max-width: 1200px;
