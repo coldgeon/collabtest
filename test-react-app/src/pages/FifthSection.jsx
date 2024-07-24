@@ -181,3 +181,4 @@ const StyledImage = styled.img`
   margin-right: -600px; 
   
  `;
+

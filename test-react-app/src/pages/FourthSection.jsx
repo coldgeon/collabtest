@@ -49,4 +49,4 @@ const LargeTextFrame = styled.p`
   .highlight {
     color: yellow;
   }
-  `;
+`;

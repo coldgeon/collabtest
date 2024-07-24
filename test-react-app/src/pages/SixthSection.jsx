@@ -58,5 +58,4 @@ const StyledImage = styled.img`
   width: 100%; 
   height: auto;
   margin-bottom: 10px; 
-  
 `;

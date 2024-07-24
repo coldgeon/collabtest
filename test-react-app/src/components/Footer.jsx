@@ -15,7 +15,6 @@ function Footer() {
 export default Footer;
 
 const FooterContainer = styled.footer`
-
   background-color: #2E322C;
   color: white;
   padding: 20px 0;
