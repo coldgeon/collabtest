@@ -24,7 +24,6 @@ const SectionContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
 `;
 
 const LeftSection = styled.div`
