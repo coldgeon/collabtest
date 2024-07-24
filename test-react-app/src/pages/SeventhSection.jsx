@@ -59,7 +59,7 @@ const SmallText = styled.p`
   
 `;
 const SmallText1 = styled.p`
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 900;
   color: #555555;
   white-space: nowrap;
@@ -68,12 +68,13 @@ const SmallText1 = styled.p`
   `;
 
 const LargeTitle = styled.h2`
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 900;
   color: #333;
   margin-bottom: 20px;
   white-space: nowrap;
-  margin-left:100px
+  margin-left:100px;
+ 
 `;
 
 const ImageAndFormContainer = styled.div`
@@ -89,13 +90,14 @@ const RegistrationForm = styled.form`
   gap: 20px;
   margin-left: 100px;
   background-color:'#DBDBDB';
-  max-width:600px;
+  max-width:800px;
+  padding-left:200px;
 `;
 
 const Label = styled.label`
   font-size: 20px;
   color: black;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-weight: bold;
 `;
 
@@ -104,14 +106,16 @@ const InputField = styled.input`
   border: 1px solid #ccc;
   border-radius: 10px;
   font-size: 16px;
-  max-width:550px;
+  width:580px;
   background:#DBDBDB;
+  
 `;
 
 const CTAButton = styled.button`
   background-color: #10A36B;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 15px;
+  padding-top:10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -120,7 +124,8 @@ const CTAButton = styled.button`
   border-radius:10px;
   cursor: pointer;
   font-weight: bold;
- max-width:600px;
+  max-width:600px;
+  height: 45px;
   &:hover {
     background-color: #45a049;
   }
@@ -129,14 +134,15 @@ const CTAButton = styled.button`
 
 const StyledImage = styled.img`
   margin-top: 100px;
-  margin-left: 120px;
+  margin-left: 200px;
+  margin-right: -100px;
   width: 300px;
   height: 300px;
   border-radius: 20px;
   padding-top: 10%;
   &.top {
     position: absolute;
-    top: 1px;
+    top: 40px;
     z-index: 1;
 
   }
