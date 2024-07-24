@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import styled from 'styled-components';
 import mascot4 from '../assets/mascot4.png';
@@ -53,6 +52,7 @@ const StyledImage = styled.img`
   margin-left: 150px; 
   margin-bottom: 300px;
 `;
+<<<<<<< HEAD
 =======
 import styled from 'styled-components';
 
@@ -108,4 +108,3 @@ const PlaceholderText = styled.div`
   border: 1px dashed #666;
   margin: 10px;
 `;
->>>>>>> b794e7a422abb38be30aaeb8028fc1d35454921e
