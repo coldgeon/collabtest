@@ -172,4 +172,4 @@ const StyledImage = styled.img`
   height: auto;
   margin-bottom: 10px; 
   margin-right: -300px; 
-`;
+ `;

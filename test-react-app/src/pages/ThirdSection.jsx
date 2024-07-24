@@ -164,5 +164,4 @@ const StyledImg = styled.img`
     bottom: 20px;
     z-index: 1;
   }
-
 `;
