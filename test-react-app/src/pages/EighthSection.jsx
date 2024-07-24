@@ -24,7 +24,7 @@ const SectionContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 50px 0;
+  
 `;
 
 const LeftSection = styled.div`
@@ -47,8 +47,8 @@ const SmallText = styled.p`
 `;
 
 const StyledImage = styled.img`
-  width: 250px;
+  width: 280px;
   height: 200px;
-  margin-left: 150px; 
+  margin-left: 200px; 
   margin-bottom: 300px;
 `;

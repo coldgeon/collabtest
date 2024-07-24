@@ -1,4 +1,4 @@
-import Nav from './components/Navar';
+import Nav from './components/Navbar';
 import FirstSection from './pages/FirstSection';
 import SecondSection from './pages/SecondSection';
 import ThirdSection from './pages/ThirdSection';

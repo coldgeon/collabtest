@@ -44,26 +44,30 @@ const LeftContent = styled.div`
 
 const RightContent = styled.div`
   flex: 1;
-  padding-left: 50px;
+  padding-left: 30px;
 `;
 
 const SmallText = styled.p`
-  font-weight: 900;
-  font-size: 24px;
-  color: black;
+ ${({ theme }) => theme.fonts.roboto_medium};
+  font-size: 25px;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 15px;
   
 `;
 
 const LargeTitle = styled.h2`
-  font-size: 40px;
+ ${({ theme }) => theme.fonts.roboto_medium};
+  font-size: 44px;
   line-height: 55px;
   font-weight: 900;
   color: #333;
+  
   margin-bottom: 20px;
 `;
 
 const MediumText = styled.p`
-  font-size: 15px;
+  font-size: 16px;
   color: #666;
   margin-bottom: 70px;
 `;
@@ -72,21 +76,26 @@ const FeatureList = styled.ul`
   list-style-type: none;
   margin-bottom: 30px;
   max-width: 450px;
+  
 `;
 
 const FeatureListItem = styled.li`
   ${({ theme }) => theme.fonts.roboto_medium};
   color: ${({ theme }) => theme.colors.pc1};
-  font-size: 14px;
-  
+  font-size: 15px;
+  font-weight: 600;
   padding-left: 30px;
   position: relative;
   background: #FFFFFF;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05),
+              0 -4px 8px rgba(0, 0, 0, 0.05), 
+              4px 0 8px rgba(0, 0, 0, 0.05), 
+              -4px 0 8px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
   margin-bottom: 40px;
-  width: 100%; 
+  width: 500px; 
   box-sizing: border-box; 
   
   &:before {
@@ -119,8 +128,8 @@ const CTAButton = styled.button`
   position: relative;  
   border-radius: 10px;
   margin-bottom: 20px;
-  max-width: 450px;
-  width: 100%; 
+  
+  width: 500px; 
   box-sizing: border-box; 
 
   &:hover {
@@ -139,8 +148,8 @@ const PhoneImageContainer = styled.div`
 
 
 const StyledImage = styled.img`
-  width: 230px;
-  height: 440px;
+  width: 300px;
+  height: 500px;
   border-radius: 20px;
   
   margin-right: -1px;

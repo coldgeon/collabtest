@@ -67,26 +67,33 @@ const RightContent = styled.div`
 `;
 
 const SmallText = styled.p`
-  font-weight: 900;
-  font-size: 20px;
-  color: #111111;
+  font-size: 24px;
+  font-weight: 800;
+  color: #333;
   margin-bottom: 10px;
-  
+  padding-left: 250px; 
 `;
 
 const LargeTitle = styled.h2`
-  font-size: 35px; 
-  font-weight: 900;
+${({ theme }) => theme.fonts.roboto_medium};
+  font-size: 36px; 
+  font-weight: 500;
   color: #333;
   margin-bottom: 20px;
   padding-bottom: 10px;
   padding-top: 10px;
+  padding-left: 250px; 
   white-space: nowrap;
+  line-height: 40px;
+  text-shadow: -1px -1px 0 #333, 1px -1px 0 #333,-1px 1px 0 #333, 1px 1px 0 #333;
+  
+  
 `;
 
 const SmallText1 = styled.p`
-  font-size: 16px; 
+  font-size: 15px; 
   color: #555555;
+  padding-left: 250px; 
   white-space: nowrap;
   margin-bottom: 60px;
   letter-spacing: -2px;
@@ -99,7 +106,7 @@ const SmallText2 = styled.p`
   white-space: nowrap;
   margin-top: 80px;
   margin-bottom: 20px;
-  
+  margin-left: 480px;
 `;
 
 
@@ -109,10 +116,8 @@ const FeaturesGrid = styled.div`
   grid-template-rows: repeat(2, 1fr);    
   gap: 10px; 
   margin-bottom: 40px; 
-  margin-left: 100px;
-  max-width:600px; 
-
-  
+  margin-left: 380px;
+   
 `;
 
 const FeatureGridItem = styled.div`
@@ -121,6 +126,7 @@ const FeatureGridItem = styled.div`
   align-items: center;
   padding: 10px; 
   border-radius: 8px;
+  
 `;
 
 const FeatureValueBox = styled.div`
@@ -128,12 +134,12 @@ const FeatureValueBox = styled.div`
   display: flex; 
   justify-content: center;
   align-items: center;
-  width: 250px; 
+  width: 280px; 
   height: 120px;
   color: white;
   text-align: center;
   border-radius: 10px;
-  font-size: 55px; 
+  font-size: 58px; 
   font-weight: 700;
   margin-bottom: 10px;
 `;
@@ -143,6 +149,7 @@ const FeatureLabel = styled.div`
   font-size: 18px; 
   color: #333;
   text-align: center;
+  
 `;
 
 const CTAButton = styled.button`
@@ -159,7 +166,7 @@ const CTAButton = styled.button`
   font-weight: bold;
   width: 100%;
   max-width:500px; 
-  margin-left: 150px;
+  margin-left: 420px;
   margin-bottom: 150px;
   &:hover {
     background-color: #45a049;
@@ -168,8 +175,9 @@ const CTAButton = styled.button`
 
 
 const StyledImage = styled.img`
-  width: 400px; 
+  width: 350px; 
   height: auto;
-  margin-bottom: 10px; 
-  margin-right: -300px; 
+  margin-bottom: 100px; 
+  margin-right: -600px; 
+  
  `;

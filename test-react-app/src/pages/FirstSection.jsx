@@ -58,7 +58,7 @@ const RightSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 15%;
+  padding-left: 200px;
 `;
 
 const PhoneImage = styled.div`
@@ -76,32 +76,39 @@ const PhoneImage = styled.div`
 const LogoLarge = styled.div`
   ${({ theme }) => theme.fonts.sansita_one};
   color: ${({ theme }) => theme.colors.pc1};
-  font-size: 80px;
-  font-weight: bold;
+  font-size:100px;
+  font-weight: 900;
   margin-bottom: 20px;
 `;
 
 const HeroTitle1 = styled.h1`
-  font-size: 28px;
+ ${({ theme }) => theme.fonts.roboto_medium};
   color: #333;
-  margin-bottom: 10px;
+  font-size: 34px;
+  margin-bottom: 20px;
   font-weight: 900;
   padding-top: 30px;
+  transform: scaleY(1.09);
+ 
 `;
 
 const HeroTitle2= styled.h1`
-  font-size: 36px;
+  ${({ theme }) => theme.fonts.roboto_medium};
+  font-size: 42px;
   color: #333;
   margin-bottom: 30px;
   font-weight: 900;
-  
+  transform: scaleY(1.08);
+ 
  
 `;
 const HeroSubtitle = styled.p`
   font-size: 14px;
-  color: #333;
-  margin-bottom: 30px;
+  color: ${({ theme }) => theme.colors.black};
+  padding-top:10px;
+  margin-bottom: 40px;
   font-weight: 500;
+  
 `;
 
 const CTAButton = styled.button`
@@ -111,13 +118,14 @@ const CTAButton = styled.button`
   text-align:center;
   text-decoration: none;
   display: inline-block;
-  width: 350px;
+  width: 450px;
   height: 50px;
   font-size: 18px;
   border: none;
   border-radius: 15px;
   cursor: pointer;
   font-weight: bold;
+ 
   &:hover {
     background-color: #45a049;
   }

@@ -38,9 +38,11 @@ const TextStack = styled.div`
 `;
 
 const LargeTextFrame = styled.p`
-  margin: 20px 0;
+ ${({ theme }) => theme.fonts.roboto_medium};
+  margin: 20px 10px;
+  padding-top:10px;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
   color: #FFFFFF;
 

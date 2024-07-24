@@ -11,7 +11,7 @@ function SecondSection() {
       <LeftContent>
         <SectionTitle1>"도매가 비교"</SectionTitle1>
         <SectionTitle2>주식처럼 실시간 가격비교</SectionTitle2>
-        <SectionSubtitle>애호박에서 가장 저렴한 농산물을 실시간으로 찾아보세요</SectionSubtitle>
+        <SectionSubtitle>애호박에서 가장 저렴한 농산물을 실시간으로 찾아보세요!</SectionSubtitle>
         <FeatureList>
           <FeatureListItem>오늘 식탁을 더 싸고 맛있게 즐길 수 있어요.</FeatureListItem>
           <FeatureListItem>오프라인별로 농산물 가격을 한 번에 확인할 수 있어요.</FeatureListItem>
@@ -53,22 +53,26 @@ const RightContent = styled.div`
 `;
 
 const SectionTitle1 = styled.h2`
-  font-size: 24px;
+ ${({ theme }) => theme.fonts.roboto_medium};
+  font-size: 28px;
   font-weight: 900;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+ 
 `;
 const SectionTitle2 = styled.h2`
-  font-size: 40px;
-  font-weight: 900;
+ ${({ theme }) => theme.fonts.roboto_medium};
+  font-size: 46px;
+  font-weight:500;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 40px;
+  text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
 `;
 
 
 const SectionSubtitle = styled.p`
-  font-size: 18px;
+  font-size: 17px;
   color: #666;
   margin-bottom: 50px;
 `;
@@ -86,35 +90,21 @@ const FeatureListItem = styled.li`
   ${({ theme }) => theme.fonts.roboto_medium};
   color: ${({ theme }) => theme.colors.pc1};
   font-size: 15px;
+  font-weight: 600;
   margin-bottom: 15px;
   padding-left: 30px;
   position: relative;
   white-space: nowrap;
-  background: #f0f4f3;
-  padding: 10px 20px;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05),
+              0 -4px 8px rgba(0, 0, 0, 0.05), 
+              4px 0 8px rgba(0, 0, 0, 0.05), 
+              -4px 0 8px rgba(0, 0, 0, 0.05);
   margin-bottom: 20px;
   max-width: 400px;
-
-  &:after {
-	content: '';
-	position: absolute;
-	right: 10px;
-	top: 80%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-left-color: #f0f4f3;
-	border-right: 0;
-	border-bottom: 0;
-	margin-top: -10px;
-	margin-right: -20px;
-}
-  &:last-child {
-    margin-bottom: 0;
-  }
-`;
+  `;
 
 
 const PhoneImageContainer = styled.div`
@@ -128,17 +118,17 @@ const PhoneImageContainer = styled.div`
 `;
 
 const SmallText = styled.p`
-  font-size: 12px;
+  font-size: 13px;
   color: black;
   margin-bottom: 30px;
   margin-left: -50px;
 `;
 
 const StyledImage = styled.img`
-  width: 230px;
-  height: 440px;
+  width: 300px;
+  height: 500px;
   border-radius: 20px;
-  margin-left: -80px;
+  margin-left: -50px;
   margin-right: 30px;
  
 `;
@@ -151,14 +141,14 @@ const StyledImg = styled.img`
   bottom: 0;
 
   &.left {
-    right: -80px;
+    right: -120px;
     bottom: 20px;
     z-index: 1;
   }
 
   &.right {
     width: 130px;
-    right: -110px;
+    right: -150px;
     z-index: 2;
   }
 `;
