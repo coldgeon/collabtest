@@ -158,8 +158,8 @@ const StyledImage = styled.img`
 
   &.right {
     right: 0;
-    z-index: 1; /* 중앙 이미지보다 위로 올리기 위해 z-index를 3으로 설정 */
-    transform: translateX(151px); /* 중앙 이미지 위로 이동시키기 위해 x축으로 -140px 이동 */
+    z-index: 1;
+    transform: translateX(151px); 
   }
 `;
 

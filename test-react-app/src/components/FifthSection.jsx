@@ -56,14 +56,14 @@ const LeftContent = styled.div`
   flex: 1;
   display: flex;
   position: relative;
-  justify-content: center; /* 수평 중앙 정렬 */
-  align-items: flex-end;   /* 하단 정렬 */
+  justify-content: center; 
+  align-items: flex-end;  
   height: 100%; 
 `;
 
 const RightContent = styled.div`
   flex: 1;
-  padding-left: 20px; /* 패딩을 줄여서 전체 크기를 줄임 */
+  padding-left: 20px; 
 `;
 
 const SmallText = styled.p`

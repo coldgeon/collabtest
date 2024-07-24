@@ -86,8 +86,8 @@ const FeatureListItem = styled.li`
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
-  width: 100%; /* 동일한 width 설정 */
-  box-sizing: border-box; /* padding과 border를 width에 포함시키기 위해 설정 */
+  width: 100%; 
+  box-sizing: border-box; 
   
   &:before {
     content: '';
@@ -120,7 +120,7 @@ const CTAButton = styled.button`
   border-radius: 10px;
   margin-bottom: 20px;
   max-width: 450px;
-  width: 100%; /* 동일한 width 설정 */
+  width: 100%; 
   box-sizing: border-box; 
 
   &:hover {
@@ -130,10 +130,10 @@ const CTAButton = styled.button`
 
 const PhoneImageContainer = styled.div`
   display: flex;
-  justify-content: space-between; /* 나란히 배열하고 간격을 자동으로 조정 */
+  justify-content: space-between; 
   align-items: center;
   position: relative;
-  width: 600px; /* 컨테이너 너비를 조정 */
+  width: 600px;
   height: 500px;
 `;
 

@@ -119,10 +119,10 @@ const FeatureListItem = styled.li`
 
 const PhoneImageContainer = styled.div`
   display: flex;
-  justify-content: space-between; /* 나란히 배열하고 간격을 자동으로 조정 */
+  justify-content: space-between; 
   align-items: center;
   position: relative;
-  width: 400px; /* 컨테이너 너비를 조정 */
+  width: 400px; 
   height: 500px;
 
 `;
