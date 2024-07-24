@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-function Nav() {
+function Nave() {
   return (
     <Navbar>
       <Logo>Aehopark</Logo>
@@ -12,7 +12,7 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Nave;
 
 const Navbar = styled.nav`
   display: flex;
@@ -24,7 +24,7 @@ const Navbar = styled.nav`
 const Logo = styled.div`
   font-size: 24px;
   font-weight: bold;
-  color: #4CAF50;
+  color: #4caf50;
 `;
 
 const NavItems = styled.div`
@@ -37,6 +37,6 @@ const NavItem = styled.a`
   text-decoration: none;
   font-weight: bold;
   &:hover {
-    color: #4CAF50;
+    color: #4caf50;
   }
 `;
